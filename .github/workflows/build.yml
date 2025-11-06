@@ -28,9 +28,8 @@ jobs:
       - name: Build APK (Debug)
         run: ./gradlew assembleDebug
 
-      - name: Upload APK Artifact
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: WirasatLand
-          path: |
-            app/build/outputs/apk/debug/app-debug.apk
+          name: WirasatLand-APK
+          path: app/build/outputs/apk/debug/app-debug.apk
